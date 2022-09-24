@@ -4,10 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel = "stylesheet" href = "./Stilos.css">
+    <title>ArgCoin</title>
 </head>
 <body>
-    <h1>Bienvenidos a mi pagina</h1>
     <script src="monedas.js"></script>
+    <header class="encabezado">
+        <h1> Bienvenidos a ArgCoin</h1>
+    </header>
+    <form  class="formulario">
+        <fieldset class="register-alin">
+            <h2 class="titulo-datos"> Datos personales</h2>
+            <div class="margen-register">
+            <div><label for="nombre">Nombre</label></div>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+            <br>
+            <br>
+            <div><label for="apellido">Apellido</label></div>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+            <br>
+            <br>
+            <div><label for="correo">Correo electrónico</label></div>
+            <input type="email" name="correo" id="correo" placeholder="Ingresa tu mail" required>
+            <br>
+            <br>
+            <div><label for="num">Número</label></div>
+            <input type="number" name="num" id="num" placeholder="Ingresa un número" required>
+            <br>
+            <br>
+            <label for="Pais">Pais</label>
+            <br>
+            <select name="Pais" id="Pais">
+                <option value=""> Seleccione su pais</option>
+                <option value="A"> Argentina</option>
+                <option value="U"> Uruguay</option>
+                <option value="B"> Brasil</option>
+                <option value="P"> Paraguay</option>
+                <option value="C"> Chile</option>
+                <option value="P"> Peru</option>
+                <option value="B"> Bolivia</option>
+            </select>
+            <br>
+            <br>
+            <!-- Checkbox -->
+            <div> Tipos de monedas de su interes</div>
+            <div><input type="checkbox" name="cbox1"> Oro</div>
+            <div><input type="checkbox" name="cbox2"> Plata</div>
+            <div><input type="checkbox" name="cbox3"> Alpaca</div>
+            <div><input type="checkbox" name="cbox4"> Bimetalicas</div>
+            <div><input type="checkbox" name="cbox5"> Trimetalicas</div>
+            <div><input type="checkbox" name="cbox6"> Niquel</div>
+            <br>
+            <br>
+            </div>
+            <div class="comentario"> Comentarios sobre lo que busca</div>
+            <br> <br>
+            <textarea name="comentario" id="comentario" cols="40" rows="10" maxlength="10"></textarea>
+            <br>
+            <br>
+            <span class="buttom-formulario"><input type="submit" value="Envia el formulario"></span>
+            <span class="buttom-formulario"><input type="reset" value="Limpiar formulario"></span>
+            
+        </fieldset>
+    </form>
+    <footer>
+        <div class="margenfooter">
+          <div>
+              <h3 class="footersecciones">Quienes somos</h3>
+              <ul class="letrasfooter">
+                  <li><a href="#">Nosotros</a></li>
+                  <li><a href="#">Retro </a></li>
+                  <li><a href="#">Comunidad</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="footersecciones">Ayuda</h3>
+              <ul class="letrasfooter">
+                  <li><a href="#">Centro de ayuda</a></li>
+                  <li><a href="#">Contactenos</a></li>
+                  <li><a href="#">Sucursales</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="footersecciones">Beneficios</h3>
+              <ul class="letrasfooter">
+                  <li><a href="#">Descuentos</a></li>
+                  <li><a href="#">Club Retro</a></li>
+                  <li><a href="#">Cambios</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="footersecciones">Recomendado</h3>
+              <ul class="letrasfooter">
+                  <li><a href="#">Colecciones</a></li>
+                  <li><a href="#">Juegos</a></li>
+                  <li><a href="#">Figuras</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="footersecciones">Novedades</h3>
+              <ul class="letrasfooter">
+                  <li><a href="#">Sitio web</a></li>
+                  <li><a href="#">Legales</a></li>
+                  <li><a href="#">Medios de pago</a></li>
+              </ul>
+          </div>
+        </div>
+          <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+              <p class="copyright">R&G © 2022</p>
+          </div>
+        
+    </footer>
 </body>
+
 </html>

@@ -54,3 +54,31 @@ const eliminarMoneda = (monedas) =>{
   
   eliminarMoneda("50 bani");
 //======Pregunta como hacer que al eliminar un pais se me elinime tambien la moneda. Se puede??========
+//=======Agrego funciones de orden superior=============
+const monedaPais = [
+  { id:1, nombre: "Argentina", cantidad: 569 , Valor: 54382},
+  { id:2, nombre: "Estados Unidos", cantidad: 380 , Valor: 42963},
+  { id:3, nombre: "Alemania", cantidad: 250 , Valor: 31234},
+  { id:4, nombre: "España", cantidad: 234 , Valor:22833},
+  { id:5, nombre: "Italia", cantidad: 497 , Valor: 35000},
+  { id:6, nombre: "Zimbawe", cantidad: 12 , Valor: 3500},
+];
+
+let producto = monedaPais.find(item => item.nombre === "Argentina");
+console.log(monedaPais);// me muestra todos los datos del pais que tengo
+
+
+/* let nombre = prompt("Ingrese el Pais que desea buscar");
+let pais = monedasPais.find(item => item.nombre === nombre);
+let mensaje = `
+Id: ${pais.id}
+Nombre: ${pais.nombre}
+Cantidad: ${pais.cantidad}
+Valor: $${pais.Valor}
+`;
+alert(mensaje); */// con esto me tira el dato de lo que yo le pida en el navegador segun el pais que tengo registrado
+
+
+
+let filtrados = monedaPais.filter(item => item.Valor < 4000);
+console.log(filtrados);// me muestra los paises que en la coleccion total valen menos de 4000

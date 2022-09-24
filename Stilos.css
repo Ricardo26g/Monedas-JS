@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*....Bienvenidos...*/
+.encabezado {
+    list-style: none;
+    text-align: right;
+    display: block;
+}
+
+.encabezado li{
+    display: inline-block;
+}
+
+.encabezado ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    line-height: 25px;
+    padding: 4rem;
+}
+
+body{
+    background-color: white;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,88,0.196516106442577) 0%, rgba(4,171,180,0.8491771708683473) 56%, rgba(0,212,255,1) 100%);
+    background-color: rgb(0, 119, 128);
+    border-bottom: 10px solid rgb(0, 119, 128);
+}
+
+header h1{
+    margin-bottom: 20px;
+}
+
+
+
+
+.register-alin{
+    padding-bottom: 10px;
+}
+
+.buttom-formulario{
+    padding: 0px 20px;
+}
+
+.comentario{
+    text-align: center;
+}
+.margen-register{
+    padding: 0px 70px;
+}
+
+.titulo-datos{
+text-align: center;
+margin:10px 0px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.encabezado {
+    list-style: none;
+    text-align: center;
+}
+
+.encabezado li{
+    display: inline-block;
+}
+
+.encabezado ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    line-height: 25px;
+    padding: 4rem;
+}
+
+body{
+    background-color: rgb(189, 188, 188);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    background-color: rgb(0, 119, 128)
+}
+
+footer{
+    background-color: rgb(61, 60, 60);
+}
+
+.margenfooter{
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.footersecciones{
+    margin:10px 0px;
+    color: white;
+}
+
+
+.letrasfooter a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
